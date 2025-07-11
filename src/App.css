@@ -1,38 +1,248 @@
-.App {
-  text-align: center;
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    background-color: #f0f0f0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+    width: 200px;
+    height: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.filter-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+#catagory {
+    width: 250px;
+    height: 38.5px;
+    border: none;
+    border-right: 2px solid #000;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.options {
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#search {
+    width: 400px;
+    height: 33px;
+    border: none;
+}
+
+#search-button {
+    background-color: #080808;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 40px;
+}
+
+.user-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#Login,
+#Signup {
+    background-color: #f00404;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    background-color: #efc907;
+}
+
+.content-button {
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #efc907;
+    color: wheat;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.content-button:hover {
+    background-color: #f00404;
+}
+
+#banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+
+#offer {
+    background-color: rgb(48, 46, 46);
+    color: #efc907;
+}
+
+#shop-now {
+    background-color: #efc907;
+    color: #0b0b0b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* === Popular Category Section === */
+.popular-category {
+    padding: 2rem;
+    overflow-x: auto;
+}
+
+.popular-category-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.popular-category-button1,
+.popular-category-button2 {
+    background-color: #efc907;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popular-category-content {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+/* Each item container */
+.popular-category-item {
+    position: relative;
+    width: 200px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.popular-category-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Overlay title */
+.overlay-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    .filter-search {
+        width: auto;
+    }
+
+    #catagory,
+    #search,
+    #search-button {
+        width: 30%;
+        height: 40px;
+    }
+
+    #Login,
+    #Signup {
+        width: auto;
+        height: 30px;
+    }
+
+    .user-actions {
+        gap: auto;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content-button {
+        width: 100%;
+    }
 }
