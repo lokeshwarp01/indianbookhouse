@@ -5,6 +5,7 @@ import examwise from './assets/examwise.png';
 import publicwise from './assets/publicwise.png';
 import subjectwiseTM from './assets/subjectwisetm.png';
 import subjectwiseEM from './assets/subjectwiseem.png';
+import Sidebar from "./components/Sidebar";
 import './App.css';
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
         <div className="user-actions">
           <button id="Login">Login</button>
           <button id="Signup">Signup</button>
-          <img src={cart} alt="cart" />
+          <img id="cart" src={cart} alt="cart" />
         </div>
       </div>
       <div className="content">
@@ -45,9 +46,8 @@ function App() {
       <div className="banner">
         <img id="banner-image" src={banner} alt=" banner" />
         <div className="banner-content">
-          <h1>Indian Book House<br />
-            Best Choice for<br />
-            Competitative Exams<br />
+          <h1>
+            Indian Book House Best Choice for Competitative Exams    
           </h1>
           <h5 id="offer">Get Flat 25% Discount on Your First Order</h5>
           <button id="shop-now">Shop Now</button>
@@ -77,6 +77,9 @@ function App() {
           </div>
         </div>
       </section>
+      <div style={{ display: "flex", padding: "20px", background: "#f5f5f5" }}>
+      <Sidebar />
+    </div>
     </div >
   );
 }
