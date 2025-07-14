@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/indianbookhouse/static/css/main.c1965fd5.css",
-    "main.js": "/indianbookhouse/static/js/main.1ae74379.js",
+    "main.css": "/indianbookhouse/static/css/main.2ee987a3.css",
+    "main.js": "/indianbookhouse/static/js/main.f4e79436.js",
     "static/js/453.37172633.chunk.js": "/indianbookhouse/static/js/453.37172633.chunk.js",
     "static/media/image.png": "/indianbookhouse/static/media/image.4579d1754f4c26fd0a10.png",
     "static/media/subjectwisetm.png": "/indianbookhouse/static/media/subjectwisetm.f4ecda140cd27b45a8b6.png",
@@ -9,12 +9,12 @@
     "static/media/subjectwiseem.png": "/indianbookhouse/static/media/subjectwiseem.b1d3ef074c8a1dd688f1.png",
     "static/media/examwise.png": "/indianbookhouse/static/media/examwise.73f8d1fc7a121c47a1cb.png",
     "index.html": "/indianbookhouse/index.html",
-    "main.c1965fd5.css.map": "/indianbookhouse/static/css/main.c1965fd5.css.map",
-    "main.1ae74379.js.map": "/indianbookhouse/static/js/main.1ae74379.js.map",
+    "main.2ee987a3.css.map": "/indianbookhouse/static/css/main.2ee987a3.css.map",
+    "main.f4e79436.js.map": "/indianbookhouse/static/js/main.f4e79436.js.map",
     "453.37172633.chunk.js.map": "/indianbookhouse/static/js/453.37172633.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1965fd5.css",
-    "static/js/main.1ae74379.js"
+    "static/css/main.2ee987a3.css",
+    "static/js/main.f4e79436.js"
   ]
 }
