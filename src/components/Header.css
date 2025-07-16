@@ -1,5 +1,5 @@
 .header {
-    position:static;
+    position: static;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,7 +41,7 @@
 
 #search {
     width: 400px;
-    height: 33px;
+    height: 40.5px;
     border: none;
 }
 

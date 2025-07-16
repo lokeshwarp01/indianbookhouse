@@ -3,7 +3,7 @@ import ActionBar from "./components/ActionBar.js";
 import Banner from "./components/Banner.js";
 import HeadingButton from "./components/Heading_Button.js";
 import PopularCat from "./components/PopularCat.js";
-import CollapseSideBar from "./components/CollapseSideBar.js";
+import CategoryDropdown from "./components/CategoryDropdown.js";
 import categories from "./assets/DATA.js";
 import './App.css';
 function App() {
@@ -16,7 +16,7 @@ function App() {
         headingText="Popular Categories"
         buttonText="View All" />
       <PopularCat />
-      <CollapseSideBar categories={categories} />
+      <CategoryDropdown categories={categories} />
     </div >
   );
 }
