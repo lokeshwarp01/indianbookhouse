@@ -1,0 +1,59 @@
+.popular-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1%;
+}
+
+
+.popular-category-item1 {
+    width: 24%;
+    height: 200px;
+    background-image: url('../assets/examwise.png');
+    background-size: cover;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popular-category-item2 {
+    width: 24%;
+    height: 200px;
+    background-image: url('../assets/publicwise.png');
+    background-size: cover;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popular-category-item3 {
+    width: 24%;
+    height: 200px;
+    background-image: url('../assets/subjectwisetm.png');
+    background-size: cover;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popular-category-item4 {
+    width: 24%;
+    height: 200px;
+    background-image: url('../assets/subjectwiseem.png');
+    background-size: cover;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popular-category-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 120%;
+    color: #ef3d07;
+    background-color: #2b2a25;
+    font-weight: bold;
+    text-align: center;
+}

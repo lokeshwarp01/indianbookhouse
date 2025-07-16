@@ -1,0 +1,23 @@
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    background-color: #efc907;
+}
+
+.content-button {
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #efc907;
+    color: wheat;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.content-button:hover {
+    background-color: #f00404;
+    cursor: pointer;
+}
