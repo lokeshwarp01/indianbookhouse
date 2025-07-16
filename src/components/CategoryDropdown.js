@@ -5,6 +5,7 @@ const CategoryDropdown = () => {
     return (
         <div >
             <select id="category-dropdown" >
+                <option value="" disabled selected>Select a category</option>
                 {categories.map((category, i) => (
                     <optgroup key={i} label={category.title}>
                         {category.items.map((item, j) => (

@@ -2,12 +2,11 @@
     border-left: 5px solid;
     display: flex;
     justify-content: space-between;
-    margin: 1%;
+    margin: 0.5%;
 }
 
 .popular-category-button1 {
     color: black;
-    padding: 10px 20px;
     margin-left: 5px;
     font-weight: bold;
     font-size: 1rem;
@@ -18,7 +17,6 @@
     background-color: #efc907;
     color: black;
     border: none;
-    padding: 10px 20px;
     margin-left: 5px;
     font-weight: bold;
     font-size: 1rem;

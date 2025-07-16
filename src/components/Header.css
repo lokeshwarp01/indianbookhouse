@@ -47,10 +47,10 @@
 
 #search-button {
     background-color: #080808;
-    color: #fff;
-    border: none;
+    color: #f0ae08;
+    border: 2px solid #f0ae08;
     width: 100px;
-    height: 40px;
+    height: 41.5px;
     cursor: pointer;
 }
 

@@ -3,8 +3,6 @@ import ActionBar from "./components/ActionBar.js";
 import Banner from "./components/Banner.js";
 import HeadingButton from "./components/Heading_Button.js";
 import PopularCat from "./components/PopularCat.js";
-import CategoryDropdown from "./components/CategoryDropdown.js";
-import categories from "./assets/DATA.js";
 import './App.css';
 function App() {
   return (
@@ -16,7 +14,10 @@ function App() {
         headingText="Popular Categories"
         buttonText="View All" />
       <PopularCat />
-      <CategoryDropdown categories={categories} />
+      <HeadingButton
+        headingText="New Releases"
+        buttonText="View All" />
+
     </div >
   );
 }
