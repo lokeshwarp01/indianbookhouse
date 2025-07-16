@@ -1,7 +1,7 @@
 {
   "name": "indiabookhouse",
   "version": "0.1.0",
-  "homepage": "https://lokeshwarp01.github.io/indianbookhouse",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
