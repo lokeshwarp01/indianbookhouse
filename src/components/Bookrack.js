@@ -1,5 +1,9 @@
 import React from 'react';
 import './Bookrack.css';
+import image1 from '../assets/image1.svg';
+import image2 from '../assets/image2.svg';
+import image3 from '../assets/image3.svg';
+import image4 from '../assets/image4.svg';
 
 const books = [
   {
@@ -9,7 +13,7 @@ const books = [
     price: 850,
     discount: '15% off',
     rating: 5,
-    image: 'https://via.placeholder.com/150', // replace with real image
+    image: image1,
   },
   {
     id: 2,
@@ -18,7 +22,7 @@ const books = [
     price: 850,
     discount: '15% off',
     rating: 5,
-    image: 'https://via.placeholder.com/150',
+    image: image2,
   },
   {
     id: 3,
@@ -27,7 +31,7 @@ const books = [
     price: 850,
     discount: '15% off',
     rating: 4,
-    image: 'https://via.placeholder.com/150',
+    image: image3,
   },
   {
     id: 4,
@@ -36,32 +40,57 @@ const books = [
     price: 850,
     discount: '15% off',
     rating: 5,
-    image: 'https://via.placeholder.com/150',
+    image: image4,
+  }
+  ,
+  {
+    id: 4,
+    title: 'How to Crack Any Exam',
+    year: 'by S. Chand',
+    price: 850,
+    discount: '15% off',
+    rating: 5,
+    image: image4,
+  }
+  ,
+  {
+    id: 4,
+    title: 'How to Crack Any Exam',
+    year: 'by S. Chand',
+    price: 850,
+    discount: '15% off',
+    rating: 5,
+    image: image4,
+  }
+  ,
+  {
+    id: 4,
+    title: 'How to Crack Any Exam',
+    year: 'by S. Chand',
+    price: 850,
+    discount: '15% off',
+    rating: 5,
+    image: image4,
   }
 ];
 
 const BookRack = () => {
   return (
     <div className="bookrack-container">
-      <div className="header">
-        <h2>New Release</h2>
-        <button className="view-all">View All</button>
-      </div>
-
-      <div className="book-list">
-        {books.map(book => (
+      {
+        books.map(book => (
           <div className="book-card" key={book.id}>
+            < img src={book.image} alt={book.title} className="book-image" />
             <div className="discount">{book.discount}</div>
-            <img src={book.image} alt={book.title} className="book-image" />
             <div className="book-title">{book.title}</div>
             <div className="book-year">{book.year}</div>
             <div className="price-row">
               <div className="price">₹ {book.price}.00</div>
               <button className="buy-btn">Buy Now</button>
             </div>
-          </div>
-        ))}
-      </div>
+          </div >
+        ))
+      }
     </div>
   );
 };
