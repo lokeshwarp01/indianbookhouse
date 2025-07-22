@@ -1,4 +1,3 @@
-
 .content {
     display: flex;
     flex-direction: row;
@@ -20,4 +19,8 @@
 .content-button:hover {
     background-color: #f00404;
     cursor: pointer;
+}
+
+.content-button.active {
+    background-color: #f00404;
 }
