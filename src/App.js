@@ -19,6 +19,7 @@ function App() {
         headingText="New Releases"
         buttonText="View All" />
       <BookRack />
+
     </div >
   );
 }
