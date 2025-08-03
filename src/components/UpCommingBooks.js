@@ -17,7 +17,7 @@ const UpCommingBooks = () => {
                     </p>
                 </div>
             </div>
-            <div className="book2"></div>
+            <div className="book2"><button>PRE-ORDER</button></div>
             <div className="book3"></div>
         </div >
     );

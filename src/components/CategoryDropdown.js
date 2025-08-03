@@ -9,7 +9,7 @@ const CategoryDropdown = () => {
                 {categories.map((category, i) => (
                     <optgroup key={i} label={category.title}>
                         {category.items.map((item, j) => (
-                            <option key={j} value={item}>{item}</option>
+                            <option className="options" key={j} value={item}>{item}</option>
                         ))}
                     </optgroup>
                 ))}

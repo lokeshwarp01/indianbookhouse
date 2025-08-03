@@ -1,4 +1,4 @@
-.content {
+/* .content {
     display: flex;
     flex-direction: row;
     height: 30%;
@@ -23,4 +23,81 @@
 
 .content-button.active {
     background-color: #f00404;
+} */
+.content {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  background-color: #efc907;
+  padding: 0 5%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.content-button {
+  height: 50px;
+  padding: 0 25px;
+  background-color: transparent;
+  color: #2b2a25;
+  font-weight: bold;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 16px;
+  position: relative;
+}
+
+.content-button:hover {
+  background-color: #f00404;
+  color: white;
+}
+
+.content-button.active {
+  background-color: #f00404;
+  color: white;
+}
+
+.content-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #2b2a25;
+  transition: width 0.3s ease;
+}
+
+.content-button:hover::after,
+.content-button.active::after {
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 0 3%;
+  }
+  
+  .content-button {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 0 2%;
+  }
+  
+  .content-button {
+    padding: 0 12px;
+    font-size: 13px;
+    height: 45px;
+  }
 }

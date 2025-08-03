@@ -2,14 +2,13 @@
     display: flex;
     justify-content: space-between;
     margin: 10px;
-    background-color: greenyellow;
 }
 
 .book1 {
     position: relative;
     margin: 10px;
     min-height: 200px;
-    min-width: 400px;
+    min-width: 470px;
     border-radius: 10px;
     background-color: blueviolet;
 }
@@ -22,6 +21,7 @@
     width: 80px;
     background-image: url("../assets/image1.svg");
     background-size: cover;
+    cursor: pointer;
 }
 
 #Bimage2 {
@@ -32,6 +32,7 @@
     width: 80px;
     background-image: url("../assets/image2.svg");
     background-size: cover;
+    cursor: pointer;
 }
 
 #Bimage3 {
@@ -42,6 +43,7 @@
     width: 80px;
     background-image: url("../assets/image3.svg");
     background-size: cover;
+    cursor: pointer;
 }
 
 #Bimage4 {
@@ -52,6 +54,7 @@
     width: 80px;
     background-image: url("../assets/image4.svg");
     background-size: cover;
+    cursor: pointer;
 }
 
 #content {
@@ -64,19 +67,33 @@
     font-size: 20px;
 }
 
-/* 
+
 .book2 {
     margin: 10px;
     min-height: 200px;
-    min-width: 400px;
+    min-width: 470px;
     border-radius: 10px;
-    background-color: blueviolet;
+    background-image: url(../assets/preorder.png);
+    background-size: cover;
 }
-
+.book2 button{
+    position: relative;
+    top: 9rem;
+    left: 16rem;
+    height: 2rem;
+    width: 9rem ;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
 .book3 {
     margin: 10px;
     min-height: 200px;
-    min-width: 400px;
+    min-width: 470px;
     border-radius: 10px;
-    background-color: blueviolet;
-} */
+    background-image: url(../assets/ubr.png);
+    background-size: cover;
+
+}

@@ -1,4 +1,4 @@
-.book-card {
+/* .book-card {
   background-color: #fff;
   border: 1px solid #ddd;
   box-shadow: 5px 5px 5px rgba(67, 66, 66, 0.1);
@@ -17,6 +17,7 @@
 .bookrack-container {
   display: flex;
   overflow-x: scroll;
+  width: 100%;
 }
 
 .price-row {
@@ -28,4 +29,103 @@
   background-color: #efc907;
   border: 1px solid #0a0909;
   cursor: pointer;
+} */
+.bookrack-container {
+  display: flex;
+  overflow-x: auto;
+  width: 81.5vw;
+  padding: 10px 0;
+  gap: 15px;
+  scrollbar-width: thin;
+  scrollbar-color: #efc907 #f0f0f0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.bookrack-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.bookrack-container::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.bookrack-container::-webkit-scrollbar-thumb {
+  background-color: #efc907;
+  border-radius: 6px;
+}
+
+.book-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  margin: 0 5px;
+  text-align: center;
+  width: 180px;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.book-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.buy-btn {
+  background-color: #efc907;
+  color: #0a0909;
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: #e0b800;
+}
+
+@media screen and (max-width: 768px) {
+  .book-card {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .book-card img {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .book-card {
+    width: 130px;
+    padding: 8px;
+  }
+  
+  .price-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .buy-btn {
+    width: 100%;
+    padding: 5px;
+  }
 }

@@ -6,6 +6,7 @@ import CategoryDropdown from './CategoryDropdown';
 
 const Header = () => {
   return (
+    <>
     <div className="header">
       <div>
         <img className="logo" src={logo} alt="logo" />
@@ -21,6 +22,7 @@ const Header = () => {
         <img id="cart" src={cart} alt="cart" />
       </div>
     </div>
+    </>
   );
 };
 
